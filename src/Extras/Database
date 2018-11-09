@@ -1,0 +1,48 @@
+
+
+CREATE TABLE Games (
+id INTEGER PRIMARY KEY auto_increment ,
+game_title VARCHAR (100) ,
+game_genre VARCHAR (20) ,
+game_price DECIMAL (10, 2),
+game_stock INTEGER ,
+last_delivery DATE
+);
+
+insert into games values(NULL, "Rock Band", "Rhythm", 10.50, 10, '2017-03-24');
+
+CREATE TABLE users (
+id INTEGER PRIMARY KEY auto_increment,
+username VARCHAR (30),
+password VARCHAR (100),
+UNIQUE (username)
+);
+
+insert into users values(NULL, "user1", "password");
+
+
+
+
+/* php for inserting */
+<?php
+require( 'connection.php' ) ;
+
+//SQL to create the users table
+$sql = id INTEGER PRIMARY KEY auto_increment,
+username VARCHAR (30),
+password VARCHAR (100),
+UNIQUE (username)
+);" ;
+
+if ($conn->query($sql) === TRUE)
+{
+    echo "Table users created successfully";
+}
+else
+{
+    echo "Error creating table: " . $conn->error;
+}
+
+$conn->close();
+
+?>
