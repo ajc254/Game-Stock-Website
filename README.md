@@ -1,2 +1,2 @@
 # Game-Stock-Website
-(Year 1) Website to manage game stock
+(Year 1) Website to manage game stock.
